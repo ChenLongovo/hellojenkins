@@ -66,7 +66,7 @@ public class BasicController {
 
     @GetMapping("github")
     public String push(){
-        return "cl 测试   git push  出发自动化构建  第2次"+new Date();
+        return "cl 测试   git push  出发自动化构建  第99999次"+new Date();
     }
 
 
