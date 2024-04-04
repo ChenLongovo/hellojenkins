@@ -17,10 +17,9 @@
 package com.example.demo.demos.web;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
@@ -64,4 +63,14 @@ public class BasicController {
         user.setName("zhangsan");
         user.setAge(18);
     }
+
+    @GetMapping("github")
+    public String push(){
+        return "cl 测试   git push  出发自动化构建  第2次"+new Date();
+    }
+
+
+
+
+
 }
